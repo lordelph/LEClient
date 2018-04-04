@@ -29,10 +29,11 @@ namespace Elphin\LEClient;
 use GuzzleHttp\Client;
 use Psr\Http\Message\ResponseInterface;
 
-class DNSOverHTTPS{
+class DNSOverHTTPS
+{
 
-    const CloudFlare = 'https://cloudflare-dns.com/dns-query';
-    const Google = 'https://dns.google.com/resolve';
+    const DNS_CLOUDFLARE = 'https://cloudflare-dns.com/dns-query';
+    const DNS_GOOGLE = 'https://dns.google.com/resolve';
 
     /**
      * Domain to query
@@ -69,10 +70,11 @@ class DNSOverHTTPS{
     public function __construct(string $baseURI = null)
     {
         //Default to Google, seems like a safe bet...
-        if ($baseURI === null)
+        if ($baseURI === null) {
             $this->baseURI = 'https://dns.google.com/resolve';
-        else
+        } else {
             $this->baseURI = $baseURI;
+        }
 
         $this->client = new Client([
             'base_uri' => $this->baseURI,
@@ -94,8 +96,9 @@ class DNSOverHTTPS{
             ]
         ];
 
-        if(strpos($this->baseURI, 'cloudflare'))
+        if (strpos($this->baseURI, 'cloudflare')) {
             $query['query']['ct'] = 'application/dns-json'; //CloudFlare forces this tag, Google ignores
+        }
 
         $response = $this->client->get(null, $query);
 
@@ -119,5 +122,4 @@ class DNSOverHTTPS{
             throw new \RuntimeException($json->errors[0]->message, $json->errors[0]->code);
         }
     }
-
 }

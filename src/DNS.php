@@ -13,7 +13,7 @@ class DNS
     {
         $hostname = '_acme-challenge.' . str_replace('*.', '', $domain);
 
-        $records = new DNSOverHTTPS(DNSOverHTTPS::Google);
+        $records = new DNSOverHTTPS(DNSOverHTTPS::DNS_GOOGLE);
         $records = $records->get($hostname, 'TXT');
 
         foreach ($records->Answer as $record) {
