@@ -12,9 +12,12 @@ class DNS
     public function checkChallenge($domain, $requiredDigest)
     {
         $hostname = '_acme-challenge.' . str_replace('*.', '', $domain);
-        $records =  dns_get_record($hostname, DNS_TXT);
-        foreach ($records as $record) {
-            if ($record['host'] == $hostname && $record['type'] == 'TXT' && $record['txt'] == $requiredDigest) {
+
+        $records = new DNSOverHTTPS(DNSOverHTTPS::DNS_GOOGLE);
+        $records = $records->get($hostname, 'TXT');
+
+        foreach ($records->Answer as $record) {
+            if (rtrim($record->name, ".") == $hostname && $record->type == 16 && trim($record->data, '"') == $requiredDigest) {
                 return true;
             }
         }
