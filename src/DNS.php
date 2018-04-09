@@ -17,7 +17,7 @@ class DNS
         $records = $records->get($hostname, 'TXT');
 
         foreach ($records->Answer as $record) {
-            if ($record->host == $hostname && $record->type == 16 && $record->data == $requiredDigest) {
+            if (rtrim($record->name, ".") == $hostname && $record->type == 16 && trim($record->data, '"') == $requiredDigest) {
                 return true;
             }
         }
