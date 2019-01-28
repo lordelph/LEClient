@@ -87,7 +87,7 @@ class LEConnector
     {
         $result = $this->head($this->newNonce);
 
-        if ($result['status'] !== 204) {
+        if ($result['status'] !== 200) {
             //@codeCoverageIgnoreStart
             throw new RuntimeException("No new nonce - fetched {$this->newNonce} got " . $result['header']);
             //@codeCoverageIgnoreEnd
