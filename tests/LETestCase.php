@@ -124,7 +124,7 @@ JSON;
             'Connection' => 'keep-alive'
         ];
 
-        return new Response(204, $headers);
+        return new Response(200, $headers);
     }
 
     /**
