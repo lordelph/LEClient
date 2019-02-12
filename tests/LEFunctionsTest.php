@@ -30,6 +30,9 @@ class LEFunctionsTest extends TestCase
      */
     public function testECGenerateKeys($length)
     {
+        if (version_compare(PHP_VERSION, '7.1.0') == -1) {
+            $this->markTestSkipped('PHP 7.1+ required for EC keys');
+        }
         $keys = LEFunctions::ECGenerateKeys($length);
 
         $this->assertArrayHasKey('public', $keys);
@@ -48,6 +51,10 @@ class LEFunctionsTest extends TestCase
      */
     public function testECGenerateKeysWithInvalidLength()
     {
+        if (version_compare(PHP_VERSION, '7.1.0') == -1) {
+            $this->markTestSkipped('PHP 7.1+ required for EC keys');
+        }
+
         LEFunctions::ECGenerateKeys(111);
     }
 

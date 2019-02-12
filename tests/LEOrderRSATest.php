@@ -7,7 +7,7 @@ use Elphin\PHPCertificateToolbox\Exception\RuntimeException;
 use Prophecy\Argument;
 use Psr\Log\NullLogger;
 
-class LEOrderTest extends LETestCase
+class LEOrderRSATest extends LETestCase
 {
     /**
      * @return LEConnector
@@ -385,7 +385,7 @@ PRIVATE;
         $store = $this->initCertStore();
         $basename='example.org';
         $domains = ['example.org', 'test.example.org'];
-        $keyType = 'ec';
+        $keyType = 'rsa';
         $notBefore = '';
         $notAfter = '';
 
@@ -543,7 +543,7 @@ PRIVATE;
         $store = $this->initCertStore();
         $basename='example.org';
         $domains = ['example.org', 'test.example.org'];
-        $keyType = 'ec';
+        $keyType = 'rsa';
         $notBefore = '';
         $notAfter = '';
 
@@ -572,7 +572,7 @@ PRIVATE;
         $store = $this->initCertStore();
         $basename='example.org';
         $domains = ['example.org', 'test.example.org'];
-        $keyType = 'ec';
+        $keyType = 'rsa';
         $notBefore = '';
         $notAfter = '';
 
@@ -595,7 +595,7 @@ PRIVATE;
         $store = $this->initCertStore();
         $basename='example.org';
         $domains = ['example.org', 'test.example.org'];
-        $keyType = 'ec';
+        $keyType = 'rsa';
         $notBefore = '';
         $notAfter = '';
 
@@ -618,7 +618,7 @@ PRIVATE;
         $store = $this->initCertStore();
         $basename='example.org';
         $domains = ['example.org', 'test.example.org'];
-        $keyType = 'ec';
+        $keyType = 'rsa';
         $notBefore = '';
         $notAfter = '';
 
@@ -641,7 +641,7 @@ PRIVATE;
         $store = $this->initCertStore();
         $basename='example.org';
         $domains = ['example.org', 'test.example.org'];
-        $keyType = 'ec';
+        $keyType = 'rsa';
         $notBefore = '';
         $notAfter = '';
 
@@ -691,7 +691,7 @@ PRIVATE;
         $store = $this->initCertStore();
         $basename='example.org';
         $domains = ['example.org', 'test.example.org'];
-        $keyType = 'ec';
+        $keyType = 'rsa';
         $notBefore = '';
         $notAfter = '';
 
@@ -727,7 +727,7 @@ PRIVATE;
 
         $basename='example.org';
         $domains = ['example.org', 'test.example.org'];
-        $keyType = 'ec';
+        $keyType = 'rsa';
         $notBefore = '';
         $notAfter = '';
 
