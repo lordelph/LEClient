@@ -5,7 +5,6 @@
 [![Build Status][ico-travis]][link-travis]
 [![Coverage Status][ico-scrutinizer]][link-scrutinizer]
 [![Quality Score][ico-code-quality]][link-code-quality]
-[![Total Downloads][ico-downloads]][link-downloads]
 
 This is a LetsEncrypt client library for ACME v2, which allows for the automated
 creation of free SSL/TLS certificates using PHP. This includes support for wildcard
@@ -280,19 +279,19 @@ issue tracker.
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/lordelph/php-certificate-toolbox.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/zwartpet/php-certificate-toolbox.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/lordelph/php-certificate-toolbox/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/lordelph/php-certificate-toolbox.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/lordelph/php-certificate-toolbox.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/lordelph/php-certificate-toolbox.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/zwartpet/php-certificate-toolbox/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/zwartpet/php-certificate-toolbox.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/zwartpet/php-certificate-toolbox.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/lordelph/php-certificate-toolbox
-[link-travis]: https://travis-ci.org/lordelph/php-certificate-toolbox
-[link-scrutinizer]: https://scrutinizer-ci.com/g/lordelph/php-certificate-toolbox/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/lordelph/php-certificate-toolbox
-[link-downloads]: https://packagist.org/packages/lordelph/php-certificate-toolbox
-[link-author]: https://github.com/lordelph
-[link-author2]: https://github.com/yourivw
+[link-packagist]: https://packagist.org/packages/zwartpet/php-certificate-toolbox
+[link-travis]: https://travis-ci.org/zwartpet/php-certificate-toolbox
+[link-scrutinizer]: https://scrutinizer-ci.com/g/zwartpet/php-certificate-toolbox/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/zwartpet/php-certificate-toolbox
+[link-downloads]: https://packagist.org/packages/zwartpet/php-certificate-toolbox
+[link-author]: https://github.com/zwartpet
+[link-author2]: https://github.com/lordelph
+[link-author3]:https://github.com/yourivw
 [link-author3]:https://github.com/GXTX
 [link-contributors]: ../../contributors
