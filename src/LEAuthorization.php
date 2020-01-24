@@ -1,7 +1,7 @@
 <?php
-namespace Elphin\PHPCertificateToolbox;
+namespace Zwartpet\PHPCertificateToolbox;
 
-use Elphin\PHPCertificateToolbox\Exception\RuntimeException;
+use Zwartpet\PHPCertificateToolbox\Exception\RuntimeException;
 use Psr\Log\LoggerInterface;
 
 /**
@@ -14,7 +14,7 @@ use Psr\Log\LoggerInterface;
 class LEAuthorization
 {
     private $connector;
-    
+
     public $authorizationURL;
     public $identifier;
     public $status;
@@ -23,7 +23,7 @@ class LEAuthorization
 
     /** @var LoggerInterface  */
     private $log;
-    
+
     /**
      * Initiates the LetsEncrypt Authorization class. Child of a LetsEncrypt Order instance.
      *
@@ -49,11 +49,11 @@ class LEAuthorization
             //@codeCoverageIgnoreEnd
         }
     }
-    
+
     /**
      * Updates the data associated with the current LetsEncrypt Authorization instance.
      */
-    
+
     public function updateData()
     {
         $get = $this->connector->get($this->authorizationURL);
@@ -68,7 +68,7 @@ class LEAuthorization
             //@codeCoverageIgnoreEnd
         }
     }
-    
+
     /**
      * Gets the challenge of the given $type for this LetsEncrypt Authorization instance.
      * Throws a Runtime Exception if the given $type is not found in this LetsEncrypt Authorization instance.

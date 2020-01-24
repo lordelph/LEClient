@@ -1,13 +1,13 @@
 <?php
 
-namespace Elphin\PHPCertificateToolbox;
+namespace Zwartpet\PHPCertificateToolbox;
 
-use Elphin\PHPCertificateToolbox\Exception\RuntimeException;
+use Zwartpet\PHPCertificateToolbox\Exception\RuntimeException;
 
 /**
  * Tests FilesystemCertificateStorage
  *
- * @package Elphin\PHPCertificateToolbox
+ * @package Zwartpet\PHPCertificateToolbox
  */
 class FilesystemCertificateStorageTest extends LETestCase
 {

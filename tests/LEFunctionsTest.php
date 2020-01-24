@@ -1,8 +1,8 @@
 <?php
 
-namespace Elphin\PHPCertificateToolbox;
+namespace Zwartpet\PHPCertificateToolbox;
 
-use Elphin\PHPCertificateToolbox\Exception\LogicException;
+use Zwartpet\PHPCertificateToolbox\Exception\LogicException;
 use PHPUnit\Framework\TestCase;
 
 class LEFunctionsTest extends TestCase

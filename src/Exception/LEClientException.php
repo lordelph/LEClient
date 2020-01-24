@@ -1,6 +1,6 @@
 <?php
 
-namespace Elphin\PHPCertificateToolbox\Exception;
+namespace Zwartpet\PHPCertificateToolbox\Exception;
 
 /**
  * This is just a 'marker interface' that all exceptions thrown by LEClient will

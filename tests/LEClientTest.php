@@ -1,9 +1,9 @@
 <?php
 
-namespace Elphin\PHPCertificateToolbox;
+namespace Zwartpet\PHPCertificateToolbox;
 
-use Elphin\PHPCertificateToolbox\DNSValidator\DNSValidatorInterface;
-use Elphin\PHPCertificateToolbox\Exception\LogicException;
+use Zwartpet\PHPCertificateToolbox\DNSValidator\DNSValidatorInterface;
+use Zwartpet\PHPCertificateToolbox\Exception\LogicException;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Handler\MockHandler;
@@ -15,7 +15,7 @@ use Prophecy\Argument;
  * This is more of an integration test than a unit test - we mock the actual HTTP requests, but
  * the client still interacts with other components
  *
- * @package Elphin\PHPCertificateToolbox
+ * @package Zwartpet\PHPCertificateToolbox
  */
 class LEClientTest extends LETestCase
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Elphin\PHPCertificateToolbox;
+namespace Zwartpet\PHPCertificateToolbox;
 
-use Elphin\PHPCertificateToolbox\Exception\RuntimeException;
+use Zwartpet\PHPCertificateToolbox\Exception\RuntimeException;
 
 /**
  * A default storage implementation which stores information in a local filesystem
- * @package Elphin\PHPCertificateToolbox
+ * @package Zwartpet\PHPCertificateToolbox
  */
 class FilesystemCertificateStorage implements CertificateStorageInterface
 {

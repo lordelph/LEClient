@@ -1,8 +1,8 @@
 <?php
 
-namespace Elphin\PHPCertificateToolbox;
+namespace Zwartpet\PHPCertificateToolbox;
 
-use Elphin\PHPCertificateToolbox\DNSValidator\DNSOverHTTPS;
+use Zwartpet\PHPCertificateToolbox\DNSValidator\DNSOverHTTPS;
 use PHPUnit\Framework\TestCase;
 
 /**

@@ -1,5 +1,5 @@
 {
-    "name": "lordelph/php-certificate-toolbox",
+    "name": "zwartpet/php-certificate-toolbox",
     "type": "library",
     "description": "ACME v2 client for Let's Encrypt",
     "keywords": [
@@ -8,9 +8,14 @@
         "LE",
         "Certificate"
     ],
-    "homepage": "https://github.com/lordelph/php-certificate-toolbox",
+    "homepage": "https://github.com/zwartpet/php-certificate-toolbox",
     "license": "MIT",
     "authors": [
+        {
+            "name": "John Zwarthoed",
+            "homepage": "https://github.com/zwartpet",
+            "role": "Developer"
+        },
         {
             "name": "Paul Dixon",
             "email": "paul@elphin.com",
@@ -38,12 +43,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Elphin\\PHPCertificateToolbox\\": "src"
+            "Zwartpet\\PHPCertificateToolbox\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Elphin\\PHPCertificateToolbox\\": "tests"
+            "Zwartpet\\PHPCertificateToolbox\\": "tests"
         }
     },
     "scripts": {

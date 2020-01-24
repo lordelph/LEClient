@@ -1,6 +1,6 @@
 <?php
 
-namespace Elphin\PHPCertificateToolbox;
+namespace Zwartpet\PHPCertificateToolbox;
 
 /**
  * Interface CertificateStorageInterface

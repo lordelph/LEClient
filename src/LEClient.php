@@ -1,11 +1,11 @@
 <?php
 
-namespace Elphin\PHPCertificateToolbox;
+namespace Zwartpet\PHPCertificateToolbox;
 
-use Elphin\PHPCertificateToolbox\DNSValidator\DNSOverHTTPS;
-use Elphin\PHPCertificateToolbox\DNSValidator\DNSValidatorInterface;
-use Elphin\PHPCertificateToolbox\DNSValidator\NativeDNS;
-use Elphin\PHPCertificateToolbox\Exception\LogicException;
+use Zwartpet\PHPCertificateToolbox\DNSValidator\DNSOverHTTPS;
+use Zwartpet\PHPCertificateToolbox\DNSValidator\DNSValidatorInterface;
+use Zwartpet\PHPCertificateToolbox\DNSValidator\NativeDNS;
+use Zwartpet\PHPCertificateToolbox\Exception\LogicException;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use Psr\Log\LoggerInterface;

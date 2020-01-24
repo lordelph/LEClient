@@ -1,6 +1,6 @@
 <?php
 
-namespace Elphin\PHPCertificateToolbox\Exception;
+namespace Zwartpet\PHPCertificateToolbox\Exception;
 
 /**
  * Class LogicException represents an integration problem - the code is being used incorrectly

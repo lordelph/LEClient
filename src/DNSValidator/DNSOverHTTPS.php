@@ -26,15 +26,15 @@
  * SOFTWARE.
  */
 
-namespace Elphin\PHPCertificateToolbox\DNSValidator;
+namespace Zwartpet\PHPCertificateToolbox\DNSValidator;
 
 use GuzzleHttp\Client;
-use Elphin\PHPCertificateToolbox\Exception\RuntimeException;
+use Zwartpet\PHPCertificateToolbox\Exception\RuntimeException;
 use GuzzleHttp\Exception\BadResponseException;
 
 /**
  * DNSOverHTTPS implements DNSValidatorInterface using Google's DNS-over-HTTPS service
- * @package Elphin\PHPCertificateToolbox\DNSValidator
+ * @package Zwartpet\PHPCertificateToolbox\DNSValidator
  */
 class DNSOverHTTPS implements DNSValidatorInterface
 {

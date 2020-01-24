@@ -1,9 +1,9 @@
 <?php
 
-namespace Elphin\PHPCertificateToolbox;
+namespace Zwartpet\PHPCertificateToolbox;
 
-use Elphin\PHPCertificateToolbox\Exception\LogicException;
-use Elphin\PHPCertificateToolbox\Exception\RuntimeException;
+use Zwartpet\PHPCertificateToolbox\Exception\LogicException;
+use Zwartpet\PHPCertificateToolbox\Exception\RuntimeException;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\BadResponseException;
 use GuzzleHttp\Psr7\Request;
@@ -57,7 +57,7 @@ class LEConnector
         $baseURL,
         CertificateStorageInterface $storage
     ) {
-    
+
         $this->baseURL = $baseURL;
         $this->storage = $storage;
         $this->log = $log;

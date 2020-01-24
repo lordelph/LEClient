@@ -1,9 +1,9 @@
 <?php
 
-namespace Elphin\PHPCertificateToolbox;
+namespace Zwartpet\PHPCertificateToolbox;
 
-use Elphin\PHPCertificateToolbox\Exception\LogicException;
-use Elphin\PHPCertificateToolbox\Exception\RuntimeException;
+use Zwartpet\PHPCertificateToolbox\Exception\LogicException;
+use Zwartpet\PHPCertificateToolbox\Exception\RuntimeException;
 
 /**
  * LetsEncrypt Functions class, supplying the LetsEncrypt Client with supportive functions.
